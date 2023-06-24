@@ -7,18 +7,14 @@ public class Program_Raport_Sekolah {
     * @param args
     */
 
-    static void nilai(int nilai){
-      int nilai_ujian [][] = {
-         {50,51,52,53,54,55,56,57,58,59,60},
-         {61,62,63,64,65,66,67,68,69,70},
-         {71,72,73,74,75,76,77,78,79,80},
-         {81,82,83,84,85,86,87,88,89,90,100}
-      };
-    }
+   static void nilai(int nilai) {
 
-    static void input(String input){
+   }
+
+   static void input(String input) {
       System.out.println(input);
-    }
+   }
+
    public static void main(String[] args) {
 
       try (Scanner inputan_user = new Scanner(System.in)) {
@@ -49,7 +45,6 @@ public class Program_Raport_Sekolah {
          System.out.println("1.Nilai Sikap Minimal Cukup Baik (3)");
          System.out.println("2.Nilai Akademik Tidak Boleh di bawah 60");
 
-
          System.out.print("Masukan Nama Siswa \t :");
          kelulusan = inputan_user.next();
          System.out.println(
@@ -61,167 +56,138 @@ public class Program_Raport_Sekolah {
          System.out.print("Masukan Input Nilai\t:");
          nilai_kelulusan = inputan_user.nextInt();
 
-         if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 1) { //test passed ✔
+         if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 1) { // test passed ✔
             System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nama Sikap Siswa\t:Sangat Baik");
             System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai A");
-            
-            
-         }
-         else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 1 ){ //test passed ✔
+
+         } else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 1) { // test passed ✔
             System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t:Sangat Baik");
             System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai B");
-            
-            
-         }
-         else if(nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 1){ //test passed ✔
+
+         } else if (nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 1) { // test passed ✔
             System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nama Sikap Siswa\t:Sangat Baik");
             System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai C");
-            
-            
-         }
-         else if (nilai_kelulusan == 3 && nilai_siswa > 59 && sikap == 1){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+ kelulusan);
+
+         } else if (nilai_kelulusan == 3 && nilai_siswa > 59 && sikap == 1) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t:Sangat Baik");
-            System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai D");
-            
-         }
-         else if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 2 ){ //test passed ✔
-         System.out.println("Nama Siswa\t\t:"+ kelulusan);
-         System.out.println("Nilai Sikap Siswa\t : Baik");
-         System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
-         System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
-         System.out.println("Siswa Ini Lulus Dengan Nilai A");
-         
-         }
-         else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 2){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+ kelulusan);
+
+         } else if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 2) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t : Baik");
-            System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
+            System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
+            System.out.println("Siswa Ini Lulus Dengan Nilai A");
+
+         } else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 2) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
+            System.out.println("Nilai Sikap Siswa\t : Baik");
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai B");
-            
-         }
-         else if (nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 2){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+ kelulusan);
+
+         } else if (nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 2) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t : Baik");
-            System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai C");
-            
-         }
-         else if (nilai_kelulusan == 3 && nilai_siswa > 59 && sikap == 2){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+
+         } else if (nilai_kelulusan == 3 && nilai_siswa > 59 && sikap == 2) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t : Baik");
-            System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa ini Lulus Dengan Nilai D");
-              
-         }
-         else if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 3){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+
+         } else if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 3) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t: Cukup Baik");
-            System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa ini Lulus Dengan Nilai A");
-         }
-         else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 3){ //test passed ✔
-            System.out.println("Nama Siswa\t\t"+kelulusan);
+         } else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 3) { // test passed ✔
+            System.out.println("Nama Siswa\t\t" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t: Cukup Baik");
-            System.out.println("Nilai Siswa\t\t:"+ nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai B");
 
-         }
-         else if (nilai_kelulusan == 2 && nilai_siswa >=75 && sikap == 3){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+ kelulusan);
+         } else if (nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 3) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t:Cukup Baik");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
             System.out.println("Siswa Ini Lulus Dengan Nilai C");
-         }
-         else if(nilai_kelulusan == 3 && nilai_siswa >59 && sikap == 3){ //test passed ✔
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+         } else if (nilai_kelulusan == 3 && nilai_siswa > 59 && sikap == 3) { // test passed ✔
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t :Cukup Baik");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Telah Memenuhi Syarat Kelulusan");
-         }
-         else if(nilai_kelulusan == 0 && nilai_siswa >=90 && sikap == 4){
-         System.out.println("Nama Siswa\t\t:"+kelulusan);
-         System.out.println("Nilai Sikap Siswa\t:Kurang Baik");
-         System.out.println("Nilai Siswa \t\t:"+nilai_siswa);
-         System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");   
-         }
-         else if(nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 4){
-         System.out.println("Nama Siswa\t\t:"+kelulusan);
-         System.out.println("Nilai Sikap Siswa\t:Kurang Baik");
-         System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
-         System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-         }
-         else if(nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 4 ){
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+         } else if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 4) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t:Kurang Baik");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
+            System.out.println("Nilai Siswa \t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-         }
-         else if(nilai_kelulusan == 3 && nilai_siswa < 75 && sikap == 4){
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+         } else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 4) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t:Kurang Baik");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-         }
-         else if(nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 5){
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+         } else if (nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 4) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
+            System.out.println("Nilai Sikap Siswa\t:Kurang Baik");
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
+            System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
+         } else if (nilai_kelulusan == 3 && nilai_siswa < 75 && sikap == 4) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
+            System.out.println("Nilai Sikap Siswa\t:Kurang Baik");
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
+            System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
+         } else if (nilai_kelulusan == 0 && nilai_siswa >= 90 && sikap == 5) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t : Buruk");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-         }
-         else if(nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 5){
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
+         } else if (nilai_kelulusan == 1 && nilai_siswa >= 80 && sikap == 5) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
             System.out.println("Nilai Sikap Siswa\t : Buruk");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
             System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-           
-         }
-         else if(nilai_kelulusan == 2 && nilai_siswa >=75 && sikap ==5){
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
-            System.out.println("Nilai Sikap Siswa\t: Buruk");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
-            System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-            
-         }
-         else if(nilai_kelulusan == 3 && nilai_siswa < 75 && sikap==5){
-            System.out.println("Nama Siswa\t\t:"+kelulusan);
-            System.out.println("Nilai Sikap Siswa\t: Buruk");
-            System.out.println("Nilai Siswa\t\t:"+nilai_siswa);
-            System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
-         }
-         
-         
 
+         } else if (nilai_kelulusan == 2 && nilai_siswa >= 75 && sikap == 5) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
+            System.out.println("Nilai Sikap Siswa\t: Buruk");
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
+            System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
 
-         
-         else{
+         } else if (nilai_kelulusan == 3 && nilai_siswa < 75 && sikap == 5) {
+            System.out.println("Nama Siswa\t\t:" + kelulusan);
+            System.out.println("Nilai Sikap Siswa\t: Buruk");
+            System.out.println("Nilai Siswa\t\t:" + nilai_siswa);
+            System.out.println("Siswa Ini Tidak Memenuhi Syarat Kelulusan");
+         }
+
+         else {
             System.out.println("INI ADALAH OUTPUT PROGRAM ERROR !");
-            /* System.out.println("Input Anda Ada Yang Salah Silahkan Mengulang Kembali");
-            System.out.println("Terimakasih Telah Menggunakan Program Ini"); */
+            /*
+             * System.out.println("Input Anda Ada Yang Salah Silahkan Mengulang Kembali");
+             * System.out.println("Terimakasih Telah Menggunakan Program Ini");
+             */
          }
-         }
-      
       }
+
    }
-
-   
-
-
-
+}
